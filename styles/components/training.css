@@ -1,0 +1,81 @@
+.training__content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.training__content-title {
+    margin-bottom: 60px;
+    font-family: Raleway-bold;
+    font-size: 48px;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.training__content-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.training__content-card {
+    padding: 30px;
+    box-shadow: var(--shadow);
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.training__content-card-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.training__content-top {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 131px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 30px;
+    background: #E8912E;
+    border: 10px solid #F6F6FA;
+    box-sizing: content-box;
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+}
+
+.training__content-card-title {
+    font-family: Raleway-Bold;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    flex-grow: 1;
+}
+
+.training__content-link {
+    font-family: Raleway-medium;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    color: var(--text-bg);
+}

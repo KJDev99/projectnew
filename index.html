@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewProject</title>
+
+    <!-- Raleway -->
+    <link rel="preload" href="./assets/fonts/Raleway.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/Raleway.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Raleway-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/Raleway-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Raleway-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/Raleway-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Inter -->
+    <link rel="preload" href="./assets/fonts/Inter.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inter-Medium.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./assets/fonts/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+
+    <style>
+        :root {
+            --accent-color: #453FE1;
+            --text-bg: #161928;
+            --light-bg: #FCFCFD;
+            --white: #ffffff;
+            --shadow: 0px 4px 15px 0px #0000000D;
+            --border-radius: 30px;
+        }
+
+        @font-face {
+            font-family: 'Raleway';
+            src: url('./assets/fonts/Raleway.woff2') format('woff2'),
+                url('./assets/fonts/Raleway.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Raleway-bold';
+            src: url('./assets/fonts/Raleway-Bold.woff2') format('woff2'),
+                url('./assets/fonts/Raleway-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Raleway-medium';
+            src: url('./assets/fonts/Raleway-Medium.woff2') format('woff2'),
+                url('./assets/fonts/Raleway-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter';
+            src: url('./assets/fonts/Inter.woff2') format('woff2'),
+                url('./assets/fonts/Inter.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Inter-Medium';
+            src: url('./assets/fonts/Inter-Medium.woff2') format('woff2'),
+                url('./assets/fonts/Inter-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Raleway', 'Segoe UI', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+    </style>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+
+    <!-- Hero section -->
+    <main class="main-content">
+        <section class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__content-title">Выберите направление вашей <span>профессии</span></h1>
+                    <div class="hero__content-box">
+                        <button class="hero__content-btn">Образование и педагогика</button>
+                        <button class="hero__content-btn">Медицина, фармацевтика, красота</button>
+                        <button class="hero__content-btn">ИТ и технологии</button>
+                        <button class="hero__content-btn">Бизнес, управление, маркетинг, продажи</button>
+                        <button class="hero__content-btn">Управление персоналом и кадры</button>
+                        <button class="hero__content-btn">Государственная служба и управление</button>
+                        <button class="hero__content-btn">Физическая культура и спорт</button>
+                        <button class="hero__content-btn">Социальная сфера и услуги</button>
+                        <button class="hero__content-btn">Экология</button>
+                        <button class="hero__content-btn">Транспорт</button>
+                        <button class="hero__content-btn">Безопасность труда и жизнедеятельности</button>
+                        <button class="hero__content-btn">Промышленное производство и обеспечение</button>
+                        <button class="hero__content-btn">Рабочие профессии</button>
+                        <button class="hero__content-btn">Личностное развитие</button>
+                        <button class="hero__content-btn">Универсальные навыки</button>
+                        <button class="hero__content-btn">Все направления</button>
+                        <button class="hero__content-btn hero__content-btn--highlight">Помогите подобрать курс</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="training">
+            <div class="container">
+                <div class="training__content">
+                    <h2 class="training__content-title">Основные варианты обучения</h2>
+                    <div class="training__content-box">
+                        <div class="training__content-card">
+                            <div class="training__content-top">
+                                Хит продаж
+                            </div>
+                            <h3 class="training__content-card-title">Повышение<br> квалификации</h3>
+                            <a href="#" class="training__content-link">Подробнее</a>
+
+                            <img src="./assets/images/svg-icons/IMG1.svg" alt="training__content-card-img" width="130"
+                                height="100" class="training__content-card-img">
+                        </div>
+                        <div class="training__content-card">
+
+                            <h3 class="training__content-card-title">Профессионалная <br> переподготовка</h3>
+                            <a href="#" class="training__content-link">Подробнее</a>
+
+                            <img src="./assets/images/svg-icons/IMG2.svg" alt="training__content-card-img" width="130"
+                                height="100" class="training__content-card-img">
+                        </div>
+                        <div class="training__content-card">
+
+                            <h3 class="training__content-card-title">Профессиональное <br>обучение</h3>
+                            <a href="#" class="training__content-link">Подробнее</a>
+
+                            <img src="./assets/images/svg-icons/IMG3.svg" alt="training__content-card-img" width="130"
+                                height="100" class="training__content-card-img">
+                        </div>
+                        <div class="training__content-card">
+
+                            <h3 class="training__content-card-title">Дополнительное <br> образование</h3>
+                            <a href="#" class="training__content-link">Подробнее</a>
+
+                            <img src="./assets/images/svg-icons/IMG4.svg" alt="training__content-card-img" width="130"
+                                height="100" class="training__content-card-img">
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="found">
+            <div class="container">
+                <div class="found__content">
+                    <div class="found__content-imgs">
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person1.png" alt="found-person1"
+                                width="257" height="297">
+                        </div>
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person2.png" alt="found-person2"
+                                width="386" height="230">
+                        </div>
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person3.png" alt="found-person3"
+                                width="213" height="300">
+                        </div>
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person4.png" alt="found-person4"
+                                width="214" height="214">
+                        </div>
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person5.png" alt="found-person5"
+                                width="182" height="348">
+                        </div>
+                        <div class="found__content-img-boxed">
+                            <img class="found__content-img" src="./assets/images/user/person6.png" alt="found-person6"
+                                width="451" height="230">
+                        </div>
+                    </div>
+                    <div class="found__content-infos">
+                        <h2 class="found__content-infos-title">Ещё не нашли?</h2>
+                        <p class="found__content-infos-text">Ответьте на 4 простых вопроса и мы поможем выбрать
+                            необходимый вам курс</p>
+                        <button class="found__content-infos-btn">Пройти тест</button>
+                        <h2 class="found__content-infos-title">Или начните <span
+                                class="found__content-infos-title--free">БЕСПЛАТНО</span> прямо сейчас!</h2>
+                        <p class="found__content-infos-text">Узнайте обо всех наших бесплатных курсах, которые подходят
+                            именно для вас!</p>
+                        <button class="found__content-infos-btn">Попробовать бесплатно</button>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+
+    <link rel="stylesheet" href="./styles/components/hero.css">
+    <link rel="stylesheet" href="./styles/components/training.css">
+    <link rel="stylesheet" href="./styles/components/found.css">
+
+    <!-- <script src="./js/main.js"></script> -->
+</body>
+
+</html>
