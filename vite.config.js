@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     root: '.',
-    base: './',
+    base: '',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
@@ -14,9 +14,5 @@ export default defineConfig({
         css: {
             devSourcemap: true,
         },
-    },
-    server: {
-        port: 3000,
-        open: true,
     },
 });
