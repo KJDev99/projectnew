@@ -2,21 +2,21 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     root: '.',
+    base: './',
     build: {
         outDir: 'dist',
         assetsDir: 'assets',
         rollupOptions: {
             input: {
-                main: './index.html'
-            }
+                main: './index.html',
+            },
         },
         css: {
-            devSourcemap: true
-        }
+            devSourcemap: true,
+        },
     },
     server: {
         port: 3000,
-        open: true
+        open: true,
     },
-
 });
