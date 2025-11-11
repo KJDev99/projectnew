@@ -4,11 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
-    "preview": "vite preview",
-    "serve": "npx serve dist -s"
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "dependencies": {
-    "vite": "npm:rolldown-vite@7.2.2"
+  "devDependencies": {
+    "vite": "^5.0.0"
   }
 }
